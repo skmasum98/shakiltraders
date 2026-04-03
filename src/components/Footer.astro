@@ -1,0 +1,114 @@
+---
+const currentYear = new Date().getFullYear();
+
+const quickLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Fruit & Veg', href: '/wholesale-produce' },
+  { name: 'Seafood', href: '/wholesale-seafood' },
+  { name: 'Contact', href: '/contact' },
+];
+
+const categories = [
+  { name: 'Wholesale Fruit', href: '/wholesale-produce' },
+  { name: 'Wholesale Vegetables', href: '/wholesale-produce' },
+  { name: 'Fresh Fish', href: '/wholesale-seafood' },
+  { name: 'Crustaceans & Molluscs', href: '/wholesale-seafood' },
+];
+---
+
+<footer class="bg-slate-900 text-slate-300 pt-16 pb-8 border-t border-slate-800">
+  <div class="max-w-7xl mx-auto px-4">
+    
+    <!-- Top Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      
+      <!-- Column 1: Brand -->
+      <div class="space-y-6">
+        <a href="/" class="flex flex-col">
+          <span class="text-2xl font-black text-white tracking-tighter leading-none uppercase">SHAKIL TRADERS</span>
+          <span class="text-xs font-bold text-green-500 tracking-[0.3em] uppercase mt-1">Limited</span>
+        </a>
+        <p class="text-sm leading-relaxed text-slate-400">
+          Premier London-based wholesale suppliers specializing in high-quality fresh produce and premium seafood for the B2B sector.
+        </p>
+        <div class="flex space-x-4">
+          <!-- Optional Social Icons could go here -->
+          <span class="text-xs text-slate-500 italic">Trusted Partner since 2021</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div>
+        <h3 class="text-white font-bold mb-6 text-lg tracking-tight">Navigation</h3>
+        <ul class="space-y-4 text-sm">
+          {quickLinks.map(link => (
+            <li>
+              <a href={link.href} class="hover:text-green-500 transition-colors duration-200 flex items-center gap-2">
+                <span class="h-px w-3 bg-slate-700"></span> {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Column 3: Services -->
+      <div>
+        <h3 class="text-white font-bold mb-6 text-lg tracking-tight">Core Services</h3>
+        <ul class="space-y-4 text-sm font-light">
+          {categories.map(cat => (
+            <li>
+              <a href={cat.href} class="hover:text-blue-400 transition-colors duration-200">
+                {cat.name}
+              </a>
+            </li>
+          ))}
+          <li class="pt-4 border-t border-slate-800 mt-4">
+            <span class="text-[10px] text-slate-500 block mb-1">SIC CODES</span>
+            <span class="text-xs text-slate-400">46310 • 46380</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Location/Contact -->
+      <div>
+        <h3 class="text-white font-bold mb-6 text-lg tracking-tight">London Hub</h3>
+        <div class="space-y-4 text-sm">
+          <div class="flex items-start gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <p>101 Whitechapel High Street, <br/>London, England, E1 7RA</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <p>sales@shakiltraders.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Legal Bar -->
+    <div class="pt-8 border-t border-slate-800 text-[11px] md:text-xs text-slate-500">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-center md:text-left">
+          <p>© {currentYear} SHAKIL TRADERS LIMITED. All rights reserved.</p>
+          <p class="font-mono text-[10px] uppercase">Company Number: 13318529</p>
+        </div>
+        
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:underline">Privacy Policy</a>
+          <a href="#" class="hover:underline">Terms of Trade</a>
+          <a href="#" class="hover:underline">Cookies</a>
+        </div>
+      </div>
+      
+      <div class="mt-8 text-center md:text-left opacity-30 text-[9px] uppercase tracking-[0.2em]">
+        Wholesale of fruit and vegetables • Wholesale of other food including fish, crustaceans and molluscs
+      </div>
+    </div>
+  </div>
+</footer>

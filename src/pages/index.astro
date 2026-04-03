@@ -1,11 +1,134 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Premium Wholesale Fruit, Vegetables & Seafood">
+  <!-- Hero Section -->
+  <section class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=2000" 
+        alt="Fresh wholesale produce" 
+        class="w-full h-full object-cover brightness-50"
+      />
+    </div>
+    
+    <div class="relative z-10 text-center text-white px-4 max-w-4xl">
+      <span class="uppercase tracking-widest text-sm mb-4 block font-semibold text-green-400">Established London Wholesaler</span>
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">SHAKIL TRADERS LIMITED</h1>
+      <p class="text-xl md:text-2xl mb-8 text-gray-200">
+        Premium quality wholesale of fresh fruits, vegetables, and specialty seafood. 
+        Sourced globally, delivered across London.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md font-bold transition">
+          Request Wholesale Price List
+        </a>
+        <a href="#categories" class="bg-white hover:bg-gray-100 text-slate-900 px-8 py-4 rounded-md font-bold transition">
+          Browse Categories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services / Categories -->
+  <section id="categories" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Wholesale Specialisms</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">We provide a consistent supply chain for restaurants, grocery stores, and hospitality businesses.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Category 1 -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg h-96">
+          <img 
+            src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&q=80&w=800" 
+            alt="Fresh Vegetables" 
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+            <h3 class="text-2xl font-bold text-white mb-2">Fruit & Vegetables</h3>
+            <p class="text-gray-300 mb-4">Sourcing high-grade seasonal and exotic produce (SIC 46310).</p>
+            <span class="text-green-400 font-semibold underline">View Wholesale Catalog &rarr;</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="group relative overflow-hidden rounded-xl shadow-lg h-96">
+          <img 
+            src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80&w=800" 
+            alt="Seafood" 
+            class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+            <h3 class="text-2xl font-bold text-white mb-2">Fish & Seafood</h3>
+            <p class="text-gray-300 mb-4">Premium fresh-water fish, crustaceans, and molluscs (SIC 46380).</p>
+            <span class="text-green-400 font-semibold underline">View Wholesale Catalog &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-12 text-center">
+        <div>
+          <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold mb-2">Quality Assured</h4>
+          <p class="text-gray-600">Strict quality control on every batch of produce and seafood we distribute.</p>
+        </div>
+        <div>
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold mb-2">Fast Logistics</h4>
+          <p class="text-gray-600">Strategic location in Whitechapel, London, ensuring rapid delivery to your business.</p>
+        </div>
+        <div>
+          <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold mb-2">B2B Pricing</h4>
+          <p class="text-gray-600">Competitive wholesale rates designed to support your business margins.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Open a Wholesale Account</h2>
+      <p class="mb-10 text-gray-600">Interested in sourcing from us? Contact our sales team today for pricing and delivery schedules.</p>
+      
+      <form class="grid grid-cols-1 gap-4 text-left border p-8 rounded-xl shadow-sm">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Business Name</label>
+          <input type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-3 border focus:ring-green-500" placeholder="e.g. London Fresh Market" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email Address</label>
+          <input type="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-3 border" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Message/Requirements</label>
+          <textarea rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-3 border" placeholder="Tell us about the products you need..."></textarea>
+        </div>
+        <button type="submit" class="bg-slate-900 text-white font-bold py-4 rounded-md hover:bg-slate-800 transition">
+          Send Inquiry
+        </button>
+      </form>
+    </div>
+  </section>
 </Layout>
