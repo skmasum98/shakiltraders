@@ -1,141 +1,100 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SectionTitle from '../components/SectionTitle.astro';
+
+const lastUpdated = "April 2026";
 ---
 
-<Layout title="Terms of Service - Vital Supply Ltd" description="Read the Terms of Service for Vital Supply Ltd, outlining the rules and conditions for using our wholesale goods distribution services and website.">
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <SectionTitle title="Terms of Service" />
+<Layout title="Terms of Trade | Shakil Traders Limited">
+  <section class="py-20 bg-slate-50 font-sans">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="bg-white p-8 md:p-16 rounded-3xl shadow-sm border border-slate-100">
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">Terms of Trade</h1>
+        <p class="text-slate-500 mb-8 italic text-sm">Last updated: {lastUpdated}</p>
 
-            <div class="prose max-w-none text-gray-700 mt-10 space-y-6">
-                <p>
-                    <strong>Last updated: <span id="last-updated-date-tos">December 15, 2023</span></strong>
-                </p>
+        <div class="space-y-10 text-slate-700 leading-relaxed text-sm">
+          
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2">1. The Agreement</h2>
+            <p>
+              These Terms of Trade apply to all sales of goods by <strong>SHAKIL TRADERS LIMITED</strong> (Company Number: 13318529), 
+              registered at 101 Whitechapel High Street, London, E1 7RA ("The Seller") to any person or business 
+              purchasing goods ("The Buyer"). By placing an order, the Buyer agrees to be bound by these terms.
+            </p>
+          </section>
 
-                <p>
-                    Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the <a href="https://vitalsupplyltd.com" class="text-primary-600 hover:underline">https://vitalsupplyltd.com</a> website (the "Service") operated by Vital Supply Ltd ("us", "we", or "our").
-                </p>
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2">2. Pricing & Orders</h2>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>Market Volatility:</strong> The Buyer acknowledges that prices for fresh produce and seafood are subject to daily market fluctuations. Prices quoted are valid only at the time of the quote.</li>
+              <li><strong>Order Confirmation:</strong> An order is deemed accepted only when confirmed by the Seller via email, phone, or delivery of goods.</li>
+              <li><strong>Minimum Order:</strong> The Seller reserves the right to set minimum order values for delivery.</li>
+            </ul>
+          </section>
 
-                <p>
-                    Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
-                </p>
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2 text-red-700">3. Perishable Goods & Rejections</h2>
+            <p class="font-semibold mb-2">Due to the nature of fresh fruit, vegetables, and seafood:</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>Inspection:</strong> The Buyer must inspect all goods immediately upon delivery.</li>
+              <li><strong>Reporting Window:</strong> Any claims regarding quality, damage, or short-delivery must be reported to the Seller within <strong>12 hours</strong> of delivery for seafood and <strong>24 hours</strong> for fruit and vegetables.</li>
+              <li><strong>Evidence:</strong> The Seller may require photographic evidence or the return of the disputed goods before a credit note or refund is issued.</li>
+              <li><strong>Late Claims:</strong> Claims made outside of these windows will not be accepted.</li>
+            </ul>
+          </section>
 
-                <p>
-                    <strong>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</strong>
-                </p>
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2">4. Delivery</h2>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>Timescales:</strong> While the Seller strives for early morning delivery, delivery times are estimates and not guaranteed.</li>
+              <li><strong>Access:</strong> The Buyer is responsible for ensuring clear access to the delivery premises. If delivery is unsuccessful due to lack of access, the Buyer remains liable for the full cost of perishable goods.</li>
+              <li><strong>Risk:</strong> Risk of loss or damage passes to the Buyer upon delivery to the agreed location.</li>
+            </ul>
+          </section>
 
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Accounts</h2>
-                <p>
-                    When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.
-                </p>
-                <p>
-                    You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.
-                </p>
-                <p>
-                    You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
-                </p>
-                <p>
-                    [Note: If Vital Supply Ltd doesn't have user accounts, remove this section.]
-                </p>
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2">5. Payment Terms</h2>
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>New Customers:</strong> Orders must be paid for in advance or on delivery (COD) until a credit account is approved.</li>
+              <li><strong>Credit Accounts:</strong> Payments for approved accounts are strictly due within the timeframe agreed upon account opening (e.g., 7, 14, or 30 days).</li>
+              <li><strong>Late Payment:</strong> The Seller reserves the right to charge interest on overdue invoices at a rate of 8% above the Bank of England base rate.</li>
+            </ul>
+          </section>
 
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Intellectual Property</h2>
-                <p>
-                    The Service and its original content, features and functionality are and will remain the exclusive property of Vital Supply Ltd and its licensors. The Service is protected by copyright, trademark, and other laws of both the United Kingdom and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Vital Supply Ltd.
-                </p>
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2">6. Retention of Title</h2>
+            <p>
+              Title to the goods shall remain with <strong>SHAKIL TRADERS LIMITED</strong> and shall not pass to the Buyer until the Seller 
+              has received payment in full for the goods and all other sums which are or which become due to the Seller.
+            </p>
+          </section>
 
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Links To Other Web Sites</h2>
-                <p>
-                    Our Service may contain links to third-party web sites or services that are not owned or controlled by Vital Supply Ltd.
-                </p>
-                <p>
-                    Vital Supply Ltd has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Vital Supply Ltd shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
-                </p>
-                <p>
-                    We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.
-                </p>
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2">7. Liability</h2>
+            <p>
+              The Seller's total liability for any claim shall not exceed the price of the goods supplied. The Seller is not 
+              liable for any indirect or consequential loss, loss of profit, or damage to reputation.
+            </p>
+          </section>
 
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Termination</h2>
-                <p>
-                    We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
-                </p>
-                <p>
-                    Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.
-                </p>
-                 <p>
-                    [Note: If Vital Supply Ltd doesn't have user accounts, adjust this section to refer to "your access to the Service" rather than "your account".]
-                </p>
+          <section>
+            <h2 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide border-b pb-2">8. Governing Law</h2>
+            <p>
+              These terms and any dispute arising from them are governed by and construed in accordance with the 
+              laws of <strong>England and Wales</strong>, and the parties submit to the exclusive jurisdiction of the English courts.
+            </p>
+          </section>
 
-
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Indemnification</h2>
-                <p>
-                    You agree to defend, indemnify and hold harmless Vital Supply Ltd and its licensee and licensors, and their employees, contractors, agents, officers and directors, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees), resulting from or arising out of a) your use and access of the Service, by you or any person using your account and password; b) a breach of these Terms, or c) content posted on the Service.
-                </p>
-
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Limitation Of Liability</h2>
-                <p>
-                    In no event shall Vital Supply Ltd, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
-                </p>
-
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Disclaimer</h2>
-                <p>
-                    Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
-                </p>
-                <p>
-                    Vital Supply Ltd its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
-                </p>
-
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Governing Law</h2>
-                <p>
-                    These Terms shall be governed and construed in accordance with the laws of England and Wales, without regard to its conflict of law provisions.
-                </p>
-                <p>
-                    Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.
-                </p>
-
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Changes</h2>
-                <p>
-                    We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
-                </p>
-                <p>
-                    By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
-                </p>
-
-                <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Contact Us</h2>
-                <p>If you have any questions about these Terms, please contact us:</p>
-                <ul class="list-disc list-inside space-y-2 ml-4">
-                    <li>By email: <a href="mailto:info@vitalsupplyltd.com" class="text-primary-600 hover:underline">info@vitalsupplyltd.com</a></li>
-                    <li>By visiting this page on our website: <a href="/contact" class="text-primary-600 hover:underline">https://vitalsupplyltd.com/#contact</a></li>
-                </ul>
-            </div>
+          <div class="mt-12 pt-8 border-t border-slate-100 text-center">
+            <p class="text-slate-500 text-xs italic">
+              For further inquiries regarding our wholesale terms, please contact our accounts department at sales@shakiltraders.com
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <div class="h-24"></div> <!-- Hook before closing page - provides some space -->
+      <div class="mt-8 text-center">
+        <a href="/" class="text-blue-600 hover:underline font-medium">&larr; Return to Home Page</a>
+      </div>
+    </div>
+  </section>
 </Layout>
-
-<script is:inline>
-    // Set the current date dynamically for the "Last updated" field
-    document.addEventListener('DOMContentLoaded', () => {
-        const dateSpan = document.getElementById('last-updated-date-tos');
-        if (dateSpan) {
-            const date = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            dateSpan.textContent = date.toLocaleDateString('en-US', options);
-        }
-    });
-</script>
-
-<style>
-    /* Primary colors for consistency */
-    :root {
-        --color-primary-600: #1764cc; /* Example blue */
-    }
-    .text-primary-600 {
-        color: var(--color-primary-600);
-    }
-    .hover\:underline:hover {
-        text-decoration: underline;
-    }
-    /* Ensure @tailwindcss/typography plugin is installed and configured for 'prose' */
-</style>
